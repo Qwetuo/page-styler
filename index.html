@@ -5,15 +5,27 @@
 		<title>Page Styler</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
-	<body>
-		<ul id="switcher">
-			<li class="smaller">A-</li>
-			<li class="normal">A</li>
-			<li class="bigger">A+</li>
+	<body class = ''>
+		<div class = ''>
+		<ul class="switcher">
+			<li class="smaller" onclick="changeTextSize('smaller');">A-</li>
+			<li class="normal" onclick="changeTextSize('');">A</li>
+			<li class="bigger" onclick="changeTextSize('bigger');">A+</li>
 		</ul>
+		<br>
+		<ul class="switcher">
+			<li class="red" onclick="changeColor('red');">Red</li>
+			<li class="green" onclick="changeColor('green');">Green</li>
+			<li class="blue" onclick="changeColor('blue');">Blue</li>
+		</ul>
+	
 
 		<h1>Page Styler</h1>
 
 		<p>Click the buttons above to change the page styles!</p>
+	</div>
+	<script src="script.js"></script>
+	
+	
 	</body>
 </html>
